@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryan Greig - Hangman Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js" defer></script>
+    <script src="js/word-hint-list.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+
+
+<body>
+    <header>
+        <!-- Navigation -->
+        <div class="navbar">
+         <div class="container flex">
+             <div class="logo"><a href="index.html">B<span class="letter-flip">R</span>YAN G<span class="letter-flip">R</span>EIG</a></div>
+                 <nav>
+                     <ul>
+                         <li><a href="index.html">Home</a></li>
+                     </ul>
+                 </nav>
+             </div>
+         </div>
+     </header>
+
+    <div id="title">
+        <h1>Hangman Game</h1>
+    </div>
+
+    <div class="main">
+    <div class="game-window">
+
+            <div class="hangman-img">
+                <img id="imgHang" src="images/hangman/hang-1.png" alt="hangman image 1">
+            </div>
+            
+            <div class="hangman-word">
+            
+                <div id="popup-lost">
+                    <h2>You Lose!</h2>
+                    <p>The word was<span id="loseWord"></span></p>
+                    <img src="images/hangman/SadFace.png" alt="Sad Face">
+                    <button id="reset">Reset</button>
+                </div>
+
+                <div id="popup-win">
+                    <h2>You Won!</h2>
+                    <p>Congratulations</p>
+                    <img src="images/hangman/HappyFace.png" alt="Happy Face">
+                    <button id="resetWin">Play Again!</button>
+                </div>
+
+                <h1>Good Luck!</h1>
+                <p id="word"></p>
+                <p class="hint">Hint: <span id="hint">This is going to be the hint</Span></p>
+                <p id="guesses">Wrong guesses: <span id="wrongGuess">0</span> of 6</p>
+                
+            </div>
+
+            <div class="info-guesses">
+
+                <h2>Incorrect Guesses</h2>
+                <p id="guessed-letters">Wrong: </p>
+
+                <div class="game-info">
+                    <h4>Game Info</h4>
+                    <ul>
+                        <li>Start game by using keyboard to select a letter</li>
+                        <li>Incorrect guesses will display above</li>
+                        <li>Allowed 6 incorrect guesses</li>
+                        <li>If you lose, game will reset on click 'Reset'</li>
+                    </ul>
+                </div>
+            
+            </div>
+            
+        </div>
+
+    </div>
+    <!-- Footer -->
+<footer>
+    <div class="container grid">
+        <div class="social">
+            <p>F</p>
+        </div>
+        <div class="copy">
+            <p>Designed by Bryan Greig</p>
+        </div>
+        <div class="footer-logo">
+            <p>BG</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>

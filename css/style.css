@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap");
+:root {
+  --primary-color: #292f36;
+  --secondary-color: #4ecdc4;
+  --pop-color: #ff6b6b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Body Style*/
+body {
+  font-family: "Allerta Stencil", sans-serif;
+  background-color: #7e9181;
+}
+
+#title {
+  font-size: 35px;
+  margin-top: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  padding: 30px;
+}
+
+/*Navigation*/
+.navbar {
+  background-color: #292f36;
+  color: #fff;
+  height: 90px;
+  padding: 10px;
+  border-bottom: 10px solid var(--pop-color);
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+.navbar a {
+  padding: 0 10px;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.navbar a:hover {
+  border-top: 3px solid #4ecdc4;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.5em;
+  width: 200px;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.logo a {
+  color: inherit;
+}
+
+.logo a:hover {
+  border: none;
+}
+
+.logo:hover {
+  border: none;
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.letter-flip {
+  color: #4ecdc4;
+  display: inline-block;
+  transform: rotateY(180deg);
+}
+
+/*Game Window*/
+.game-window {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/*Image*/
+img {
+  width: 300px;
+}
+
+/*First Section*/
+.hangman-img {
+  width: 250px;
+}
+
+/*Second Section*/
+.hangman-word {
+  text-align: center;
+  width: 300px;
+  margin: 30px;
+}
+
+#word {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.hangman-word h1 {
+  margin: 30px 0;
+}
+
+.hint {
+  margin: 40px 0;
+  font-size: 20px;
+}
+
+.error {
+  color: red;
+}
+
+/*Third Section*/
+.info-guesses {
+  text-align: center;
+  margin: 0 auto;
+  width: 300px;
+}
+
+#guessed-letters {
+  text-align: left;
+  background-color: #7e9181;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+  width: 300px;
+  text-transform: uppercase;
+}
+
+.game-info {
+  border: 1px solid black;
+  margin-top: 25px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.game-info li {
+  font-size: 14px;
+  margin: 10px;
+  list-style: none;
+}
+
+/*Hidden PopUp*/
+#popup-lost {
+  display: none;
+  position: absolute;
+  opacity: 0;
+  width: 300px;
+  height: 250px;
+  background-color: #7e9181;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 3px 3px 5px black;
+}
+
+#popup-lost img {
+  width: 50%;
+}
+
+#popup-lost p {
+  padding: 5px;
+}
+
+#loseWord {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+#popup-lost button {
+  width: 50%;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+#popup-win {
+  display: none;
+  position: absolute;
+  opacity: 0;
+  width: 300px;
+  height: 250px;
+  background-color: #2e3532;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 3px 3px 5px black;
+}
+
+#popup-win img {
+  width: 50%;
+}
+
+#popup-win button {
+  width: 50%;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+/*Footer*/
+footer .grid {
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+footer {
+  background-color: #000;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  height: 60px;
+  text-align: center;
+  border-top: 10px solid var(--pop-color);
+}
+
+.footer-logo {
+  color: var(--pop-color);
+}
+
+.social {
+  font-size: 20px;
+}
+
+.social:hover {
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+/*Utilities*/
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 950px) {
+  .container {
+    height: auto;
+  }
+  .game-window {
+    flex-direction: column;
+    width: 600px;
+    margin: 20px 10px;
+  }
+  .hangman-word {
+    margin: 15px 0;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    height: auto;
+  }
+  .game-window {
+    flex-direction: column;
+    width: 500px;
+    margin: 20px 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
