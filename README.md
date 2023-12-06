@@ -6,7 +6,7 @@ This is my Final Project for my Javascript MDIA-2132 class.
 -To Play-
 
 - Begin the game by using your keyboard to guess a letter in the hidden word.
-- If your guess is incorrect, the letter guessed will be present in the "Incorrect Guesses" box.
+- If your guess is incorrect, the letter guessed will be presented in the "Incorrect Guesses" box.
 - If your guess is correct, the correct letter in the word will present itself
 - If you guess a letter that has already been guessed, the letter will be ignored and not presented a second time in the "Incorrect Guesses" box.
 - The player is allowed no more than 6 incorrect guessed letters.
